@@ -35,7 +35,10 @@
             this.btnTray = new System.Windows.Forms.Button();
             this.nti = new System.Windows.Forms.NotifyIcon(this.components);
             this.cms = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.폼보이기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.cms.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -75,8 +78,23 @@
             // 
             // cms
             // 
+            this.cms.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.폼보이기ToolStripMenuItem,
+            this.종료ToolStripMenuItem});
             this.cms.Name = "cms";
-            this.cms.Size = new System.Drawing.Size(61, 4);
+            this.cms.Size = new System.Drawing.Size(127, 48);
+            // 
+            // 폼보이기ToolStripMenuItem
+            // 
+            this.폼보이기ToolStripMenuItem.Name = "폼보이기ToolStripMenuItem";
+            this.폼보이기ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.폼보이기ToolStripMenuItem.Text = "폼 보이기";
+            // 
+            // 종료ToolStripMenuItem
+            // 
+            this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.종료ToolStripMenuItem.Text = "종료";
             // 
             // Form1
             // 
@@ -94,6 +112,7 @@
             this.Name = "Form1";
             this.Text = "Beauty Forest Agent v0.1 by 3510 이세영";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.cms.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -104,7 +123,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnTray;
         private System.Windows.Forms.NotifyIcon nti;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ContextMenuStrip cms;
+        private System.Windows.Forms.ToolStripMenuItem 폼보이기ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 종료ToolStripMenuItem;
     }
 }
 
