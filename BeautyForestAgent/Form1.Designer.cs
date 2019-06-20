@@ -69,12 +69,14 @@
             this.btnTray.TabIndex = 2;
             this.btnTray.Text = "▼";
             this.btnTray.UseVisualStyleBackColor = true;
+            this.btnTray.Click += new System.EventHandler(this.BtnTray_Click);
             // 
             // nti
             // 
             this.nti.ContextMenuStrip = this.cms;
             this.nti.Icon = ((System.Drawing.Icon)(resources.GetObject("nti.Icon")));
             this.nti.Text = "(주)미림스쿨";
+            this.nti.DoubleClick += new System.EventHandler(this.Nti_DoubleClick);
             // 
             // cms
             // 
@@ -89,12 +91,14 @@
             this.폼보이기ToolStripMenuItem.Name = "폼보이기ToolStripMenuItem";
             this.폼보이기ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.폼보이기ToolStripMenuItem.Text = "폼 보이기";
+            this.폼보이기ToolStripMenuItem.Click += new System.EventHandler(this.폼보이기ToolStripMenuItem_Click);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
             this.종료ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.종료ToolStripMenuItem.Text = "종료";
+            this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -111,6 +115,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Beauty Forest Agent v0.1 by 3510 이세영";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.cms.ResumeLayout(false);
             this.ResumeLayout(false);
